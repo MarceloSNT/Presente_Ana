@@ -1,8 +1,6 @@
 @charset "utf-8";
 *{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -12,9 +10,11 @@ body{
     display: grid;
     place-content: center;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 .principal{
-    margin: 20px;
+    margin: auto;
     background-color: #e7dbef;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.082);
@@ -30,20 +30,22 @@ body{
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #6e3482;
-    margin-bottom: 10px;
+    margin: auto;
 }
 .principal>.text>h1>img{
     height: 30px;
     width: 30px;
+    
 }
 h2{
     color: #6e3482;
-    margin-top: 10px;
+    margin: auto;
 }
 p{
     font-size: 1.1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
+    margin: auto;
 }
 li{
     list-style: none;

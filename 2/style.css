@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    --cor1:#49225b;
+    --cor2:#6e3482;
+    --cor3:#a56abd;
+    --cor4:#ffffff;
+    --cor5:#000000;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background: url(../img/fundo\ corações.png);
+}
+header{
+    height: 100%;
+    background-color: var(--cor1);
+}
+main{
+    height: 100%;
+    background-image: url(../img/fundo\ corações.png);
+}
+main>div{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+main>div>p{
+    color: var(--cor3);
+}
+main>div>h1,h2{
+    color: var(--cor2);
+}
+main>div>h1>img{
+    height: 30px;
+    width: 30px;
+}
+main>div>h2>img{
+    height: 30px;
+    width: 30px;
+}
+footer{
+    height: 100%;
+    background-color: var(--cor1);
+}
+li{
+    list-style: none;
+}
+.fts{ 
+    overflow: hidden;
+}
+.fts ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: 20s infinite slide linear;
+}
+.fts img{
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.021);
+    height: 125px;
+    width: 125px;
+}
+.fts img:hover{
+    height: 200px;
+    width: 200px;
+    transition: 1s;
+}
+.fts ul:hover{
+    animation-play-state: paused;
+}
+
+@keyframes slide{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(-1710px);
+    }
+}
